@@ -83,7 +83,7 @@ public class Database {
         return result;
     }
     
-    public void eventData(String id,String name,String cls,String address) throws SQLException, ClassNotFoundException{
+    public void enterData(String id,String name,String cls,String address) throws SQLException, ClassNotFoundException{
         Statement stmt=getConnectionStatement();
         String sql="insert into "+STUDENT_TABLE+" values('"+id+"','"+name+"','"+cls+"','"+address+"');";
         System.out.println(stmt.executeUpdate(sql));
